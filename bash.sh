@@ -1,9 +1,5 @@
 #/bin/bash
 
-#clone repo
-repository="git@github.xxxx.com:blablabla/reponame.git"
-git clone "$repository" 
-
 #create venv
 $ python -m venv ./.venv
 $ . ./.venv/bin/activate
