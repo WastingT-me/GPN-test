@@ -6,13 +6,12 @@ To do:
 3. User-friendly interface
    
 Запуск
-1.
 ```
 sudo apt install python3 python3.10-venv 
 git clone https://github.com/WastingT-me/GPN-test
 cd GPN-test/
 ./bash.sh
 ```
-2. Перейти по ссылке: http://127.0.0.1:5000
+Затем перейти по ссылке: http://127.0.0.1:5000
 
 Входные данные: строка чисел, разделенных пробелом
