@@ -11,7 +11,7 @@ def inject_load_predict():
     try:
         return {"text_field_2": "Result: "+str(predict(input))}
     except:
-        return {"text_field_2": 'Wrong format: need 24 values to unpack'}
+        return {"text_field_2": 'Wrong format: need 25 values to unpack'}
 
 @app.context_processor    
 def inject_load_model():
