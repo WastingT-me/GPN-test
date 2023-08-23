@@ -1,8 +1,8 @@
 #/bin/bash
 
 #create venv
-$ python -m venv ./.venv
-$ . ./.venv/bin/activate
+python -m venv ./.venv
+./.venv/bin/activate
 echo "Python virtual env created successfully"
 
 #installing libraries from requirements.txt
