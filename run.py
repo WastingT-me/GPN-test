@@ -6,10 +6,12 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', form=request.form)
 
-@app.context_processor
 def inject_load_predict():
-    text = request.form.get("text_field_1")
-    return {"text_field_2": "Result: "+str(predict(text))}
+    input = request.form.get("text_field_1")
+    try:
+        return {"text_field_2": "Result: "+str(predict(input))}
+    except:
+        return {"text_field_2": 'Wrong format: need 24 values to unpack'}
 
 @app.context_processor    
 def inject_load_model():
