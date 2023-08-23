@@ -6,6 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', form=request.form)
 
+@app.context_processor 
 def inject_load_predict():
     input = request.form.get("text_field_1")
     try:
